@@ -1,0 +1,36 @@
+Usuarios {
+   ID - PK
+   Nombre
+   Apellidos
+   Experiencia
+   Teléfono
+   Usuario
+   Contraseña
+   Correo
+}
+
+Empresas {
+   ID - PK
+   Nombre
+   Usuario
+   Contraseña
+   correo
+}
+
+Proyectos {
+   ID PK
+   Empresa - FK
+   Nombre
+   Requisitos
+   Master - FK
+   Diseñador - FK
+   Administrador de base de datos.
+   Programadores
+}
+
+Material {
+   ID - PK
+   Usuario - FK 
+   Descripción
+   Enlace
+}
