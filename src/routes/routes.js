@@ -2,7 +2,11 @@ const {Router} = require('express');
 const router = Router();
 const fun = require('../controls/usuarios');
 
+
 router.get('/users',fun.getUsers);
-router.post('/users',fun.addUser)
+router.get('/usuarios',fun.get);
+router.post('/users',fun.create);
+router.delete('/users/:id',fun.remove);
+router.put('/users/:id',fun.update)
 
 module.exports = router;

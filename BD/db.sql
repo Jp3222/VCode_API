@@ -26,7 +26,7 @@ create table proyectos(
     nombre varchar(35) not null,
     empresa int,
     usuario text not null,
-    primary key(id),
+    primary key(id)
 );
 
 alter table proyectos 
@@ -40,14 +40,7 @@ create table material(
     titutlo varchar(200) not null,
     descripcion text,
     referencia text not null,
-    primary key(id),create table material(
-    id serial not null,
-    usuario varchar(60) not null,
-    titutlo varchar(200) not null,
-    descripcion text,
-    referencia text not null,
-    primary key(id),
-);
+    primary key(id)
 );
 
 insert into usuarios(
